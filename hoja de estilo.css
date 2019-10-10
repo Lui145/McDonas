@@ -6,6 +6,11 @@
   font-family: "Bodoni MT";
   src: url("fonts/BOD.TTF");
 }
+@font-face {
+  font-family: "Century Gothic";
+  src: url("fonts/GOTHIC.TTF");
+}
+
 
 body{
 	margin: 0;
