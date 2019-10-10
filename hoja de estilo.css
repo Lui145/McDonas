@@ -1,0 +1,200 @@
+body{
+	margin: 0;
+}
+.container-fluid{
+	margin: 0 auto;
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.row{
+	display: flex;
+}
+.header{
+	background-color: #A2231D;
+	box-sizing: border-box;
+	padding-top: 40px;
+	height: 520px;
+	position: relative;
+}
+.header .logo{
+	width: 25%;
+}
+.header .logo h1{
+	color: #FCB827;
+	font-family: The Brands;
+	font-size: 60px;
+	margin: 0;
+}
+.header .menu{
+	padding-top: 20px;
+	width: 75%;
+	text-align: right;
+	position: relative;
+}
+.header input[type="checkbox"], .header .menu span{
+	display: none;
+}
+.header .menu ul{
+	list-style: none;
+	font-family: Bodoni MT;
+}
+.header .menu ul li{
+	display: inline-block;
+}
+.header .menu ul li:not(:first-child) {
+	margin-left: 40px;
+}
+.header .menu a{
+	color: #fff;
+	text-decoration: none;
+}
+.header .menu a:hover{
+	border-bottom: 3px solid white;
+	padding-bottom: 3px;
+	transition: 0.4s border;
+}
+.banner{
+	background-image: url("img/mcdoñas.png");
+	background-size: cover;
+	color: white;
+	margin-top: 50px; 
+	padding-top: 50px;
+	padding-bottom: 60px;
+	font-family: Bodoni MT;
+	text-align: center;
+}
+.banner-title{
+	font-size: 40px;
+	font-family: The Brands;
+}
+.banner-content{
+	margin: auto;
+	width: 50%;
+	font-size: 20px;
+	text-align: center;
+}
+.menu-comida{
+	margin: 0 auto;
+	margin-top: 10px;
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.menú{
+	border-bottom: 3px solid #A2231D;
+}
+.menú h1{
+	margin: 15px 0px;
+	text-align: center;
+	font-family: The Brands;
+	font-size: 50px;
+	color: #FCB827;
+}
+
+.services{
+	margin: 0 auto;
+	display: flex;
+	flex-direction:  column;
+	align-items: center;
+}
+.services-content{
+	display: flex;
+	box-sizing: border-box;
+	margin-top: 10px;
+}
+.service{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.service-icon{
+	margin: 7px;
+	width: 280px;
+	height: 200px;
+}
+.service-icon img{
+	height: 100%;
+	width: 100%;
+}
+.service-description{
+	margin-top: 10px;
+	text-align: center;
+	font-family: Century Gothic;
+	font-size: 22px;
+}
+.footer{
+	height: 100px;
+	background-color: #A2231D;
+	text-align: center;
+	color: #FCB827;
+	padding-top: 25px;
+}
+.redes-sociales{
+	font-size: 30px;
+}
+
+
+/*Responsive design zone*/
+@media screen and (max-width: 1023px) {
+	.header{
+		height: auto;
+		padding-bottom: 20px;
+	}
+	.header .row{
+		flex-direction: column;
+	}
+	.header .menu{
+		width: 100%;
+	}
+	.banner{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 10px
+	}
+}
+@media screen and (max-width: 767px) {
+	.services-content{
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.service{
+		width: 45%;
+	}
+}
+@media screen and (max-width: 668px){
+	.header .menu ul{
+		display: none;
+	}
+	.header .menu input[type="checkbox"]{
+		display: block;
+		width: 50px;
+		height: 40px;
+		position: absolute;
+		top: 15px;
+		left: -11px;
+		z-index: 2;
+		opacity: 0;
+		
+	}
+	.header .menu span{
+		display: block;
+		width: 33px;
+		height: 4px;
+		margin-top: 5px;
+		position: relative;
+		background-color: #ffffff;
+		border-radius: 3px;
+		z-index: 1;
+	}
+	.header .menu input:checked ~ ul{
+		display: block;
+	}
+	.banner-content{
+		width: 90%;
+	}
+	.service{
+		width: 100%;
+	}
+}
