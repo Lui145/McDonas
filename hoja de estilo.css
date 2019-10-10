@@ -180,6 +180,7 @@ body{
 }
 @media screen and (max-width: 668px){
 	.header .menu ul li{
+		margin-bottom: 6px;
 		padding: 0;
 		display: block;
 		text-align: left;
@@ -199,7 +200,6 @@ body{
 		left: -11px;
 		z-index: 2;
 		opacity: 0;
-		
 	}
 	.header .menu span{
 		display: block;
@@ -213,6 +213,9 @@ body{
 	}
 	.header .menu input:checked ~ ul{
 		display: block;
+	}
+	.banner{
+		margin-top: 20px;
 	}
 	.banner-content{
 		width: 90%;
