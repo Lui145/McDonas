@@ -2,6 +2,10 @@
   font-family: "The Brands";
   src: url("fonts/The Brands.ttf");
 }
+@font-face {
+  font-family: "Bodoni MT";
+  src: url("fonts/BOD.TTF");
+}
 
 body{
 	margin: 0;
