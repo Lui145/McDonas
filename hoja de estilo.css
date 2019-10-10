@@ -76,6 +76,7 @@ body{
 .banner-title{
 	font-size: 40px;
 	font-family: The Brands;
+	font-weight: inherit;
 }
 .banner-content{
 	margin: auto;
